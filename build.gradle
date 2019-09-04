@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    implementation files('lib/neuroph-core-2.96.jar')
+    implementation files('lib/logback-classic-1.0.13.jar')
+    implementation files('lib/logback-core-1.1.2.jar')
+    implementation files('lib/slf4j-api-1.7.5.jar')
+    implementation files('lib/visrec-api-1.0-SNAPSHOT.jar')
+}
